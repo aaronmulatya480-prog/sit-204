@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Choice Online Shop</title>
+  <link rel="stylesheet" href="style.css"
+ 
+</head>
+<body bgcolor="lightblue">
+<nav class="navbar">
+  <img src="images/logo.png" alt="YourChoice Logo" class="logo">
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+   <header id="home">
+    
+        <center><h1><u>Your Choice Online Shop</u></h1></center>
+        <center><p>Your one-stop shop for quality goods</p></center>
+    </header>
+    <section id="about">
+    <h2>About Us</h2>
+    <p>
+        Your Choice Online Shop provides quality products at affordable prices.
+        We guarantee fast delivery and great customer service.
+    </p>
+</section>
+
+  <section class="products" id="products">
+    <h2>Our Products</h2>
+
+    <div class="product-list">
+
+        <!-- ELECTRONICS -->
+        <details>
+            <summary>Electronics</summary>
+
+            <div class="product">
+                <img src="images/mac.jpeg" alt="Laptop">
+                <h3>Macbook</h3>
+                <p>Ksh. 45,000</p>
+                <button onclick="addToCart('Macbook',45000)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/iphone.jpeg" alt="Phone">
+                <h3>iphone</h3>
+                <p>Ksh. 85,000</p>
+                <button onclick="addToCart('Phone',85000)">Add to Cart</button>
+            </div>
+             <div class="product">
+                <img src="images/ipad.jpeg" alt="Tablet">
+                <h3>ipad</h3>
+                <p>Ksh. 90,000</p>
+                <button onclick="addToCart('ipad',90000)">Add to Cart</button>
+            </div>
+              <div class="product">
+                <img src="images/pc.jpeg" alt="Gaming Console">
+                <h3>Gaming pc</h3>
+                <p>Ksh. 90,000</p>
+                <button onclick="addToCart('Gaming pc',90000)">Add to Cart</button>
+            </div>   
+        </details>
+
+        <!-- CLOTHING -->
+        <details>
+            <summary>Clothing</summary>
+
+            <div class="product">
+                <img src="images/trouser.jpeg" alt="Trouser">
+                <h3>Trouser</h3>
+                <p>Ksh. 1,200</p>
+                <button onclick="addToCart('Trouser',1200)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/socks.jpeg" alt="Socks">
+                <h3>Socks</h3>
+                <p>Ksh. 100</p>
+                <button onclick="addToCart('Socks',100)">Add to Cart</button>
+            </div> 
+            <div class="product">
+                <img src="images/shoes.jpeg" alt="Shoes">
+                <h3>Shoes</h3>
+                <p>Ksh. 1,500</p>
+                <button onclick="addToCart('Shoes',1500)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/shirt.jpeg" alt="Shirt">
+                <h3>shirt</h3>
+                <p>Ksh. 3,500</p>
+                <button onclick="addToCart('shirt',3500)">Add to Cart</button>
+            </div>
+
+        </details>
+
+        <!-- KITCHENWARE -->
+        <details>
+            <summary>Kitchenware</summary>
+
+            <div class="product">
+                <img src="images/blender.jpeg" alt="Blender">
+                <h3>Blender</h3>
+                <p>Ksh. 5,000</p>
+                <button onclick="addToCart('Blender',5000)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/microwave.jpeg" alt="Microwave">
+                <h3>Microwave</h3>
+                <p>Ksh. 12,000</p>
+                <button onclick="addToCart('Microwave',12000)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/Gas cooker.jpeg" alt="Gas Cooker">
+                <h3>Gas Cooker</h3>
+                <p>Ksh. 25000</p>
+                <button onclick="addToCart('Gas Cooker',25000)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/refrigerator.jpeg" alt="Refrigerator">
+                <h3>Refrigerator</h3>
+                <p>Ksh. 25,000</p>
+                <button onclick="addToCart('Refrigerator',25000)">Add to Cart</button>
+            </div>
+        </details>
+        <!-- FURNITURE -->
+<details>
+    <summary>Furniture</summary>
+
+    <div class="product">
+        <img src="images/sofa.jpeg" alt="Sofa">
+        <h3>Sofa</h3>
+        <p>Ksh. 25,000</p>
+        <button onclick="addToCart('Sofa',25000)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/bed.jpeg" alt="Bed">
+        <h3>Bed</h3>
+        <p>Ksh. 40,000</p>
+        <button onclick="addToCart('Bed',40000)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/table.jpeg" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p>Ksh. 15,000</p>
+        <button onclick="addToCart('Dining Table',15000)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/chair.jpeg" alt="Chair">
+        <h3>Chair</h3>
+        <p>Ksh. 5,000</p>
+        <button onclick="addToCart('Chair',5000)">Add to Cart</button>
+    </div>
+</details>
+
+<!-- HOME DECOR -->
+<details>
+    <summary>Home Decor</summary>
+
+    <div class="product">
+        <img src="images/vase.jpeg" alt="Vase">
+        <h3>Vase</h3>
+        <p>Ksh. 1,500</p>
+        <button onclick="addToCart('Vase',1500)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/Wall art.jpeg" alt="Wall Art">
+        <h3>Wall Art</h3>
+        <p>Ksh. 3,000</p>
+        <button onclick="addToCart('Wall Art',3000)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/rug.jpeg" alt="Rug">
+        <h3>Rug</h3>
+        <p>Ksh. 2,500</p>
+        <button onclick="addToCart('Rug',2500)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/curtains.jpeg" alt="Curtains">
+        <h3>Curtains</h3>
+        <p>Ksh. 2,000</p>
+        <button onclick="addToCart('Curtains',2000)">Add to Cart</button>
+    </div>
+</details>
+    <!-- BEAUTY & COSMETICS -->
+<details>
+    <summary>Beauty & Cosmetics</summary>
+
+    <div class="product">
+        <img src="images/lipstick.jpeg" alt="Lipstick">
+        <h3>Lipstick</h3>
+        <p>Ksh. 800</p>
+        <button onclick="addToCart('Lipstick',800)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/foundation.jpeg" alt="Foundation">
+        <h3>Foundation</h3>
+        <p>Ksh. 1,500</p>
+        <button onclick="addToCart('Foundation',1500)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/perfume.jpeg" alt="Perfume">
+        <h3>Perfume</h3>
+        <p>Ksh. 3,000</p>
+        <button onclick="addToCart('Perfume',3000)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/Face cream.jpeg" alt="Face Cream">
+        <h3>Face Cream</h3>
+        <p>Ksh. 1,200</p>
+        <button onclick="addToCart('Face Cream',1200)">Add to Cart</button>
+    </div>
+</details>
+</div>
+</section>
+
+<p>For more information about our products, please contact us at: <a href="mailto:info@yourchoice.com">info@yourchoice.com</a></p>
+   <section id="services" class="services">
+        <h2>Services We Offer</h2>
+        <ul type="square">
+            <li>Online Payments</li>
+            <li>Fast Delivery</li>
+            <li>Return and Refund</li>
+            <li>Discounts and Promotions</li>
+        </ul>
+    </section>
+
+    <section class="media">
+    <h2>Product Promotion</h2>
+
+    <video controls width="400" height="250" poster="images/video-cover.jpg">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <br><br>
+
+    <audio controls>
+        <source src="C:\Users\francis mulinge\OneDrive\Desktop\SIT 204\AUDIO.mpeg" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</section>
+
+<section id="departments">
+<h2>DEPARTMENTS</h2>
+<ul>
+  <li>Electronics
+    <ul>
+      <li>Computers
+        <ul>
+          <li>Laptops</li>
+          <li>Desktops</li>
+          <li>Gaming PC</li>
+        </ul>
+      </li>
+      <li>Phones</li>
+      <li>Televisions</li>
+    </ul>
+  </li>
+  <li>Kitchenware</li>
+  <li>Clothing</li>
+</ul>
+</section>
+        <center><h2><u>Issuarance of Receipt</u></h2></center>
+      <a href="#bottom"><button>Bottom</button></a>
+        <table border="1" cellpadding="10" cellspacing="0" style="width:100%; border-collapse: collapse; text-align: center;">
+            <tr>
+                <th rowspan="2">Customer Name</th>
+                <th rowspan="2">Status</th>
+                <th rowspan="2">Email Address</th>
+                <th colspan="2">Phone Numbers</th>
+                <th rowspan="2">Receipt Number</th>
+            </tr>
+             <tr>
+                <th>Home Phone</th>
+                <th>Cell Phone</th>
+            </tr>
+            <tr>
+                <td>Joan Kelly</td>
+                <td>Issued</td>
+                <td>kelly@gmail.com</td>
+                <td>0885632</td>
+                <td>0712435687</td>
+                <td>RCPT001</td>
+            </tr>
+
+             <tr>
+                <td>Mary Jane</td>
+                <td>Issued</td>
+                <td>mjane@gmail.com</td>
+                <td>0883432</td>
+                <td>0709835687</td>
+                <td>RCPT002</td>
+            </tr>
+
+            <tr>
+    <td>Peter Mwangi</td>
+    <td>Issued</td>
+    <td>pmwangi@gmail.com</td>
+    <td>0881123</td>
+    <td>0711122334</td>
+    <td>RCPT003</td>
+</tr>
+
+<tr>
+    <td>Linda Achieng</td>
+    <td>Issued</td>
+    <td>lindaachieng@gmail.com</td>
+    <td>0882245</td>
+    <td>0722334455</td>
+    <td>RCPT004</td>
+</tr>
+
+<tr>
+    <td>Brian Otieno</td>
+    <td>Issued</td>
+    <td>botieno@gmail.com</td>
+    <td>0883367</td>
+    <td>0703344556</td>
+    <td>RCPT005</td>
+</tr>
+
+<tr>
+    <td>Grace Wambui</td>
+    <td>Issued</td>
+    <td>gwambui@gmail.com</td>
+    <td>0884489</td>
+    <td>0714455667</td>
+    <td>RCPT006</td>
+</tr>
+
+<tr>
+    <td>Kevin Mutua</td>
+    <td>Issued</td>
+    <td>kmutua@gmail.com</td>
+    <td>0885511</td>
+    <td>0725566778</td>
+    <td>RCPT007</td>
+</tr>
+
+<tr>
+    <td>Sarah Njeri</td>
+    <td>Issued</td>
+    <td>snjeri@gmail.com</td>
+    <td>0886633</td>
+    <td>0706677889</td>
+    <td>RCPT008</td>
+</tr>
+
+    
+    <td colspan="6" style="text-align:center;">
+        <a href="Rcpt.pdf" download>Download Receipt</a>
+       
+    </td>
+</tr>
+</table>
+     <a href="#top"><button>Top</button></a>
+
+     
+<section class="user-form">
+    <center><h2><u>User Information Form</u></h2></center>
+    <form>
+        First Name:<br>
+        <input type="text"  name="fname" required><br><br>
+
+        Last Name:<br>
+        <input type="text" name="lname" required><br><br>
+
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    </section>  
+   <table border="5" width="50%" height="50%" cellpadding="20" cellspacing="0">
+
+    <tr height="50">
+        <th></th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+    </tr>
+
+    <tr>
+        <th>A</th>
+        <td>70</td>
+        <td>50</td>
+        <td rowspan="3" bgcolor="#EE00DD">200</td>
+    </tr>
+
+    <tr>
+        <th>E</th>
+        <td>90</td>
+        <td>100</td>
+    </tr>
+
+    <tr>
+        <th>F</th>
+        <td colspan="2">130</td>
+    </tr>
+   
+</table>
+<br><br>
+ <button type="button" onclick="alert('Thanks for shopping with us')">
+    Click me!</button>
+
+<br><br>
+
+<textarea name="feedback" rows="4" cols="50" placeholder="Leave your feedback here..."></textarea>
+</section>
+    <footer id="contact">
+        
+        <h2></i>Contact Us</h2>
+        <table border="1" cellpadding="1" cellspacing="0" style="width:50%; border-collapse: collapse; text-align: center;">
+            <tr>
+                <th>Contact Type</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td></i> 0712345678</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>info@yourchoice.co.ke</td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td>Nairobi, Kenya</td>
+            </tr>
+        </table>
+        <p class="copyright">© 2026 Your Choice Online Shop</p>
+    </footer>
+
+</body>
+</html>
